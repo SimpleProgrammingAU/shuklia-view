@@ -1,4 +1,6 @@
-<svg width="98" height="96" xmlns="http://www.w3.org/2000/svg">
+<svg width="98" height="96" viewBox="0 0 98 96" xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xml:space="preserve">
   <path
     fill-rule="evenodd"
     clip-rule="evenodd"
@@ -10,7 +12,7 @@
 
 <style lang="scss">
   svg {
-    width: 2rem;
-    height: 2rem;
+    width: 1rem;
+    height: 1rem;
   }
 </style>

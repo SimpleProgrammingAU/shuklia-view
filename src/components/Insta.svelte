@@ -2313,7 +2313,7 @@
   svg {
     position: absolute;
     top: -3rem;
-    left: -6rem;
+    left: 1rem;
     width: 14rem;
     height: 14rem;
     z-index: 1000;

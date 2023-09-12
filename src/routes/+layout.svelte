@@ -16,11 +16,11 @@
   </Col>
 </Row>
 <slot />
-<footer><GithubMark /><span>github.com/SimpleProgrammingAU/</span></footer>
+<footer><GithubMark /><span>github.com/SimpleProgrammingAU/shuklia-view</span></footer>
 
 <style lang="scss">
   h1 {
-    font-size: 3.5rem;
+    font-size: 4.0rem;
     margin-bottom: 0;
   }
   h2 {
