@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Seven Segment';
+  src: url('/fonts/seven-segment.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #e4989b;
+}
+
+h4,
+h5 {
+  margin: 0;
+}
+
+.card-body {
+  padding: 0.29rem 0.16rem 1.5rem 0.16rem !important;
+  background-color: white;
+}
