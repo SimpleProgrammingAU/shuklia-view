@@ -1,9 +1,9 @@
 <script lang="ts">
-  import { Card } from 'spaper';
   import { onMount } from 'svelte';
 
   let i: number;
   let s = 60;
+  let counting = false;
   $: countdown = formatOutput(s);
 
   const formatOutput = (s: number) => {
@@ -16,13 +16,17 @@
   };
 
   const startCounter = () => {
+    counting=true;
     i = setInterval(() => {
       s--;
       if (s === 0) stopCounter();
     }, 1000);
   };
 
-  const stopCounter = () => clearInterval(i);
+  const stopCounter = () => {
+    counting=false;
+    clearInterval(i);
+  }
 
   const resetCounter = () => {
     stopCounter();
@@ -34,19 +38,29 @@
 
     window.addEventListener('keydown', (e) => {
       switch (e.code) {
-        case 'Numpad1':
+        case 'Space':
           if (s > 0) startCounter();
           else {
             resetCounter();
             startCounter();
           }
           break;
-        case 'Numpad2':
+        case 'KeyC':
           stopCounter();
           break;
-        case 'Numpad3':
+        case 'KeyX':
           resetCounter();
           break;
+      }
+    });
+
+    window.addEventListener('mouseup', (e) => {
+      const {button} = e;
+      if (button === 0) {
+        if (s > 0 && !counting) startCounter();
+        else if (counting) stopCounter();
+      } else if (button === 2) {
+        resetCounter();
       }
     });
   });
@@ -63,12 +77,12 @@
 <style lang="scss">
   div.countdown {
     font-family: 'Seven Segment';
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: 700;
     text-align: center;
     color: rgb(207, 10, 10);
     background-color: rgb(20, 20, 20);
-    width: 20rem;
+    width: 30rem;
     padding: 0.5rem 1rem 0 1rem;
 
     display: flex;

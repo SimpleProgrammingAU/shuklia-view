@@ -2311,11 +2311,7 @@
 
 <style lang="scss">
   svg {
-    position: absolute;
-    top: -3rem;
-    left: 1rem;
-    width: 14rem;
-    height: 14rem;
-    z-index: 1000;
+    width: 20rem;
+    height: 20rem;
   }
 </style>

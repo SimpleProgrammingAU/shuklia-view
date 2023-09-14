@@ -27,4 +27,7 @@
 </Card>
 
 <style lang="scss">
+  video {
+    width: 90vw;
+  }
 </style>

@@ -5,7 +5,6 @@
 
 <Row center>
   <Col>
-    <div style="padding-top: 3rem"></div>
     <CameraOutput />
   </Col>
 </Row>

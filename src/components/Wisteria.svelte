@@ -6,10 +6,10 @@
 <style lang="scss">
   img {
     position: absolute;
-    top: -4rem;
-    right: -3.5rem;
+    top: -8.5rem;
+    right: -5rem;
     border: none;
-    width: 13rem;
+    width: 20rem;
     z-index: 1000;
   }
 </style>
